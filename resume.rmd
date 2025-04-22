@@ -1,0 +1,175 @@
+---
+title: "Manushi Welandawe's Resume"
+author: Manushi Welandawe
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'dd_resume.css', 'resume']
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+source("cv_printing_functions.r")
+
+
+# Read in all data and initialize a CV printer object
+CV <- create_CV_object(
+  data_location = "https://docs.google.com/spreadsheets/d/1vAZ2jGlA2Ec_iqbwJKgnlglyDahdIFLGWVaavyuTbaA/edit?gid=917338460#gid=917338460",
+  pdf_mode = params$pdf_mode,
+  resume_mode = TRUE
+)
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+
+
+<!-- ```{r}
+# Build interactive network of positions colored by section
+# and connected if they occurred in the same year
+datadrivencv::build_network_logo(CV$entries_data)
+```
+
+
+
+```{r}
+if(params$pdf_mode){
+  cat("View this resume online with links at _https://www.manushiw.com/cv/resume/_")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV]()")
+}
+```
+
+
+For a longer form version, see my [CV](nickstrayer.me/cv/). -->
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV |> print_contact_info()
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV <- print_section(CV, 'education_resume',
+                   glue_template = "**{title}**<br>{institution}<br>{ifelse(end == 'N/A', paste0('Expected ', start_year), paste0(start_year, ' – ', end_year))}<br><br>"
+)
+```
+
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV |> print_skill_bars()
+```
+
+Awards and Services {#awards}
+--------------------------------------------------------------------------------
+
+```{r}
+CV |> print_awards_services()
+```
+
+Interests {#interests}
+--------------------------------------------------------------------------------
+
+```{r}
+CV |> print_interests()
+```
+
+
+<!-- Disclaimer {#disclaimer} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).  -->
+
+<!-- The source code is available at [](). -->
+
+<!-- Last updated on `r Sys.Date()`. -->
+
+
+
+Main
+================================================================================
+
+Manushi Welandawe {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+# Note the special double pipe so we modify the CV object in place
+CV <- print_text_block(CV, "intro") 
+```
+
+
+Experience {data-icon=laptop data-concise=true}
+--------------------------------------------------------------------------------
+
+
+```{r}
+CV <- print_section(CV, 'work_experience')
+```
+
+<!-- Research Experience {data-icon=laptop} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- CV <- print_section(CV, 'research_positions') -->
+<!-- ``` -->
+
+
+Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV <- print_section(CV, 'academic_articles')
+```
+
+Invited Talks {data-icon=microphone-lines}
+--------------------------------------------------------------------------------
+
+```{r}
+CV <- print_section(CV, 'invited_talks')
+```
+
+<!-- Selected Data Science Writing {data-icon=chart-line data-concise=true} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- CV <- print_section(CV, 'by_me_press') -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- CV <- print_section(CV, 'data_science_writings') -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- print_links(CV) -->
+<!-- ``` -->
+
