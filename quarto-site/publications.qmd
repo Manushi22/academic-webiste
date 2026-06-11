@@ -3,8 +3,6 @@ title: "Publications"
 toc: false
 ---
 
-## Journal Articles
-
 :::{.pub-entry}
 **Welandawe, M.**, Andersen, M. R., Vehtari, A., & Huggins, J. H. (2024).
 A framework for improving the reliability of black-box variational inference.
@@ -14,10 +12,6 @@ A framework for improving the reliability of black-box variational inference.
 [Preprint](https://arxiv.org/abs/2203.15945){.btn .btn-sm .btn-outline-secondary}
 :::
 
----
-
-## Conference Papers
-
 :::{.pub-entry}
 Dhaka, A. K., Catalina, A., **Welandawe, M.**, Andersen, M. R., Huggins, J. H., & Vehtari, A. (2021).
 Challenges and opportunities in high-dimensional variational inference.
@@ -25,10 +19,6 @@ Challenges and opportunities in high-dimensional variational inference.
 
 [PDF](https://proceedings.neurips.cc/paper/2021/file/404dcc91b2aeaa7caa47487d1483e48a-Paper.pdf){.btn .btn-sm .btn-outline-primary}
 :::
-
----
-
-## Other Publications
 
 :::{.pub-entry}
 Silva, E. N. S., Gangopadhyay, A., Fay, G., **Welandawe, M.**, Gawarkiewicz, G., Silver, A. M., Monim, M., & Clark, J. (2020).

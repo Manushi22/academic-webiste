@@ -9,9 +9,17 @@ toc: false
   <div class="profile-left">
     <img src="files/avatar.jpg" class="profile-photo" alt="Manushi Welandawe">
     <div class="profile-links">
-      <a href="mailto:manushivid@gmail.com" class="profile-link">
-        <i class="bi bi-envelope-fill"></i> manushivid@gmail.com
-      </a>
+      <span class="profile-link" id="email-link" style="cursor:pointer;">
+        <i class="bi bi-envelope-fill"></i> <span id="email-display"></span>
+      </span>
+      <script>
+        var u = "manushivid", d = "gmail.com";
+        var el = document.getElementById("email-display");
+        el.textContent = u + "@" + d;
+        document.getElementById("email-link").addEventListener("click", function() {
+          window.location.href = "mailto:" + u + "@" + d;
+        });
+      </script>
       <a href="https://scholar.google.com/citations?user=A3ObLdMAAAAJ&hl=en" class="profile-link" target="_blank">
         <i class="bi bi-mortarboard-fill"></i> Google Scholar
       </a>
