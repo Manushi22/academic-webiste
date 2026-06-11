@@ -1,11 +1,13 @@
 #!/bin/bash
 set -e
 
-echo "Downloading Quarto..."
-wget -qO quarto.deb "https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.557/quarto-1.4.557-linux-amd64.deb"
+QUARTO_VERSION="1.4.557"
+
+echo "Downloading Quarto ${QUARTO_VERSION}..."
+wget -q "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
 
 echo "Extracting Quarto..."
-dpkg -x quarto.deb quarto-install
+tar -xzf "quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
 
 echo "Running quarto render..."
-./quarto-install/usr/lib/quarto/bin/quarto render
+./quarto-${QUARTO_VERSION}/bin/quarto render
