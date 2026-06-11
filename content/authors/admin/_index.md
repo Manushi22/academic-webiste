@@ -4,13 +4,10 @@ education:
   courses:
   - course: PhD in Statistics
     institution: Boston University
-    year: 2026
   - course: MS in Statistics
     institution: University of Rhode Island
-    year: 2019
   - course: BS in Statistics
     institution: University of Sri Jayewardenepura
-    year: 2015
 email: "manushivid@gmail.com"
 highlight_name: true
 interests:
