@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Manushi Welandawe"
+  favicon: "files/favicon.png"
+  navbar:
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "CV"
+        href: files/resume.pdf
+        target: _blank
+    right:
+      - icon: github
+        href: https://github.com/Manushi22
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/manushi-welandawe-626012137/
+        aria-label: LinkedIn
+    pinned: false
+    background: light
+    search: false
+
+  page-footer:
+    center: "© 2026 Manushi Welandawe"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/custom.scss]
+    css: styles/custom.scss
+    toc: false
+    page-layout: full
+    smooth-scroll: true

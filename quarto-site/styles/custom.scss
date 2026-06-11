@@ -1,0 +1,212 @@
+/*-- Custom styles for Manushi Welandawe's website --*/
+
+/*-- Google Fonts --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+/*-- Variables --*/
+$primary:   #2563a8;
+$text:      #1a1a2e;
+$muted:     #6b7280;
+$border:    #e5e7eb;
+$bg-light:  #f8fafc;
+
+/*-- Base --*/
+body {
+  font-family: 'Inter', sans-serif;
+  color: $text;
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  color: $text;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+/*-- Navbar --*/
+.navbar {
+  border-bottom: 1px solid $border;
+  background: #ffffff !important;
+  padding: 1rem 2rem;
+  .navbar-brand { font-weight: 600; font-size: 1.1rem; color: $text !important; }
+  .nav-link { color: $muted !important; font-size: 0.95rem; font-weight: 500;
+    &:hover { color: $primary !important; } }
+}
+
+/*-- Profile section --*/
+.profile-section {
+  display: flex;
+  gap: 3.5rem;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 5rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.profile-left {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid $border;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: $muted !important;
+  font-weight: 400;
+  &:hover { color: $primary !important; text-decoration: none; }
+  i { font-size: 0.9rem; }
+}
+
+.profile-right {
+  flex: 1;
+  padding-top: 0.25rem;
+}
+
+.profile-name {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: $muted;
+  margin: 0 0 1.2rem;
+  font-weight: 400;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: $text;
+  margin-bottom: 1.8rem;
+  max-width: 580px;
+}
+
+.profile-sections {
+  display: flex;
+  gap: 3rem;
+
+  h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $muted;
+    margin-bottom: 0.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 0.925rem;
+      color: $text;
+      padding: 0.15rem 0;
+      &::before { content: "·  "; color: $primary; font-weight: 700; }
+    }
+  }
+}
+
+.edu-list li::before { content: none !important; }
+.edu-degree { font-size: 0.925rem; font-weight: 500; color: $text; }
+.edu-institution { font-size: 0.85rem; color: $muted; }
+
+/*-- Publications page --*/
+.pub-entry {
+  margin-bottom: 1.6rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid $border;
+  border-radius: 10px;
+  background: $bg-light;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  transition: box-shadow 0.2s;
+  &:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+
+  p { margin: 0 0 0.75rem; }
+  strong { color: $text; }
+  em { color: $muted; font-style: italic; }
+}
+
+h2.anchored {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $muted;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  border-bottom: 2px solid $border;
+  padding-bottom: 0.4rem;
+}
+
+hr { border-color: transparent; margin: 0; }
+
+/*-- Buttons --*/
+.btn-outline-primary {
+  border-color: $primary; color: $primary; font-size: 0.78rem; padding: 0.2rem 0.65rem;
+  border-radius: 5px;
+  &:hover { background: $primary; color: white; }
+}
+.btn-outline-secondary {
+  border-color: $border; color: $muted; font-size: 0.78rem; padding: 0.2rem 0.65rem;
+  border-radius: 5px;
+  &:hover { background: $border; color: $text; }
+}
+
+/*-- Footer --*/
+.nav-footer {
+  border-top: 1px solid $border;
+  color: $muted;
+  font-size: 0.85rem;
+  padding: 1.2rem;
+}
+
+/*-- Responsive --*/
+@media (max-width: 700px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    gap: 2rem;
+  }
+  .profile-left { width: 100%; }
+  .profile-links { align-items: center; }
+  .profile-right { text-align: center; }
+  .profile-bio { max-width: 100%; }
+  .profile-sections { flex-direction: column; gap: 1.5rem; align-items: center; }
+}

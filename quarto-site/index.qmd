@@ -1,0 +1,66 @@
+---
+title: " "
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="profile-section">
+  <div class="profile-left">
+    <img src="files/avatar.jpg" class="profile-photo" alt="Manushi Welandawe">
+    <div class="profile-links">
+      <a href="mailto:manushivid@gmail.com" class="profile-link">
+        <i class="bi bi-envelope-fill"></i> manushivid@gmail.com
+      </a>
+      <a href="https://scholar.google.com/citations?user=A3ObLdMAAAAJ&hl=en" class="profile-link" target="_blank">
+        <i class="bi bi-mortarboard-fill"></i> Google Scholar
+      </a>
+      <a href="https://github.com/Manushi22" class="profile-link" target="_blank">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+      <a href="https://twitter.com/manushivid" class="profile-link" target="_blank">
+        <i class="bi bi-twitter-x"></i> Twitter / X
+      </a>
+    </div>
+  </div>
+
+  <div class="profile-right">
+    <h1 class="profile-name">Manushi Welandawe</h1>
+    <p class="profile-title">Data Scientist &amp; Statistician</p>
+
+    <p class="profile-bio">
+      I'm a statistician and data scientist with a PhD in Statistics from Boston University.
+      I develop robust, scalable methods for Bayesian and machine learning models, and the
+      diagnostics that tell practitioners when those models are stable and reliable enough to act on.
+    </p>
+
+    <div class="profile-sections">
+      <div class="profile-col">
+        <h3>Interests</h3>
+        <ul>
+          <li>Bayesian Inference</li>
+          <li>Variational Inference</li>
+          <li>Scalable Statistical Methods</li>
+        </ul>
+      </div>
+      <div class="profile-col">
+        <h3>Education</h3>
+        <ul class="edu-list">
+          <li>
+            <span class="edu-degree">PhD in Statistics</span><br>
+            <span class="edu-institution">Boston University</span>
+          </li>
+          <li>
+            <span class="edu-degree">MS in Statistics</span><br>
+            <span class="edu-institution">University of Rhode Island</span>
+          </li>
+          <li>
+            <span class="edu-degree">BS in Statistics</span><br>
+            <span class="edu-institution">University of Sri Jayewardenepura</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+```

@@ -1,0 +1,49 @@
+---
+title: "Publications"
+toc: false
+---
+
+## Journal Articles
+
+:::{.pub-entry}
+**Welandawe, M.**, Andersen, M. R., Vehtari, A., & Huggins, J. H. (2024).
+A framework for improving the reliability of black-box variational inference.
+*Journal of Machine Learning Research*, 25(219), 1–71.
+
+[PDF](https://jmlr.org/papers/v25/22-0327.html){.btn .btn-sm .btn-outline-primary}
+[Preprint](https://arxiv.org/abs/2203.15945){.btn .btn-sm .btn-outline-secondary}
+:::
+
+---
+
+## Conference Papers
+
+:::{.pub-entry}
+Dhaka, A. K., Catalina, A., **Welandawe, M.**, Andersen, M. R., Huggins, J. H., & Vehtari, A. (2021).
+Challenges and opportunities in high-dimensional variational inference.
+*Advances in Neural Information Processing Systems (NeurIPS)*.
+
+[PDF](https://proceedings.neurips.cc/paper/2021/file/404dcc91b2aeaa7caa47487d1483e48a-Paper.pdf){.btn .btn-sm .btn-outline-primary}
+:::
+
+---
+
+## Other Publications
+
+:::{.pub-entry}
+Silva, E. N. S., Gangopadhyay, A., Fay, G., **Welandawe, M.**, Gawarkiewicz, G., Silver, A. M., Monim, M., & Clark, J. (2020).
+A survival analysis of the Gulf Stream warm core rings.
+*Journal of Geophysical Research: Oceans*, 125(10).
+
+[PDF](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020JC016507){.btn .btn-sm .btn-outline-primary}
+[DOI](https://doi.org/10.1029/2020JC016507){.btn .btn-sm .btn-outline-secondary}
+:::
+
+:::{.pub-entry}
+D'Agata, A. L., Wu, J., **Welandawe, M.**, Dutra, S. V. O., Kane, B., & Groer, M. W. (2019).
+Effects of early life NICU stress on the developing gut microbiome.
+*Developmental Psychobiology*, 61(5).
+
+[PDF](https://onlinelibrary.wiley.com/doi/full/10.1002/dev.21826){.btn .btn-sm .btn-outline-primary}
+[DOI](https://doi.org/10.1002/dev.21826){.btn .btn-sm .btn-outline-secondary}
+:::
