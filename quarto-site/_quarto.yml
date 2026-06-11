@@ -11,7 +11,7 @@ website:
         href: index.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "CV"
+      - text: "Resume"
         href: files/resume.pdf
         target: _blank
     right:
