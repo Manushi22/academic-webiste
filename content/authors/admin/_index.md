@@ -1,22 +1,26 @@
 ---
-bio: My research interests include Bayesian Inference, Variational Inference.
+bio: My research interests include Bayesian Inference, Variational Inference, and scalable statistical methods.
 education:
   courses:
+  - course: PhD in Statistics
+    institution: Boston University
+    year: 2024
   - course: MS in Statistics
     institution: University of Rhode Island
     year: 2019
   - course: BS in Statistics
     institution: University of Sri Jayewardenepura
     year: 2015
-email: "manushiw@bu.edu"
+email: "manushivid@gmail.com"
 highlight_name: true
 interests:
 - Bayesian Inference
 - Variational Inference
+- Scalable Statistical Methods
 organizations:
-- name: Department of Mathematics & Statistics, Boston University
+- name: Boston University
   url: https://www.bu.edu/math/
-role: Doctoral Candidate
+role: Data Scientist / Statistician
 social:
 - icon: envelope
   icon_pack: fas
@@ -25,7 +29,7 @@ social:
     header: true
   icon: twitter
   icon_pack: fab
-  <>label: Follow me on Twitter
+  label: Follow me on Twitter
   link: https://twitter.com/manushivid
 - icon: google-scholar
   icon_pack: ai
@@ -45,6 +49,6 @@ title: Manushi Welandawe
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
 -->
 
-I am a doctoral candidate in Statistics at Boston University. My research focus on developing novel methods for scalable and robust posterior inference, advised by [Prof. Jonathan Huggins](http://jhhuggins.org/).
+I am a statistician and data scientist with a PhD in Statistics from Boston University. My research focuses on developing novel methods for scalable and robust Bayesian posterior inference, with a particular emphasis on black-box variational inference.
 
 

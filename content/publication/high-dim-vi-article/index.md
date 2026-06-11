@@ -31,7 +31,7 @@ tags:
 title: Challenges and Opportunities in High Dimensional Variational Inference
 url_code: ""
 url_dataset: ""
-url_pdf: hhttps://proceedings.neurips.cc/paper/2021/file/404dcc91b2aeaa7caa47487d1483e48a-Paper.pdf
+url_pdf: https://proceedings.neurips.cc/paper/2021/file/404dcc91b2aeaa7caa47487d1483e48a-Paper.pdf
 url_poster: ""
 url_project: ""
 url_slides: ""

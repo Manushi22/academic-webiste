@@ -3,7 +3,7 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: experience
 
-active: false
+active: true
 # This file represents a page section.
 headless: true
 
@@ -26,7 +26,7 @@ experience:
   - title: Research Fellow
     company: Boston University
     company_url: ''
-    <> company_logo: org-gc
+    company_logo: ''
     location: Boston, MA
     date_start: '2020-06-01'
     date_end: ''

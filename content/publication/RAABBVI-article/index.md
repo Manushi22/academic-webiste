@@ -6,7 +6,7 @@ authors:
 - Michael Riis Andersen
 - Aki Vehtari
 - Jonathan H. Huggins
-date: "2022-03-28T00:00:00Z"
+date: "2024-01-01T00:00:00Z"
 doi: ""
 featured: true
 image:   
@@ -18,18 +18,18 @@ links:
 - name: Preprint
   url: https://arxiv.org/abs/2203.15945
 projects: ""
-publication: ""
-publication_short: ""
+publication: '*Journal of Machine Learning Research* 25(219): 1–71'
+publication_short: "JMLR"
 publication_types:
-- "3"
-publishDate: ""
+- "2"
+publishDate: "2024-01-01T00:00:00Z"
 slides: ""
 summary: ""
 tags: ""
-title: Robust, Automated, and Accurate Black-box Variational Inference
+title: A Framework for Improving the Reliability of Black-box Variational Inference
 url_code: ""
 url_dataset: ""
-url_pdf: https://arxiv.org/pdf/2203.15945.pdf
+url_pdf: https://jmlr.org/papers/v25/22-0327.html
 url_poster: ""
 url_project: ""
 url_slides: ""

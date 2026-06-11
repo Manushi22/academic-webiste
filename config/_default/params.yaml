@@ -5,10 +5,10 @@
 
 # Appearance
 
-theme: earth
+theme: minimal
 day_night: true
-font: ''
-font_size: L
+font: 'native'
+font_size: M
 
 # SEO
 
@@ -20,13 +20,7 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: manushiw@bu.edu
-phone: +1 401-212-3454
-address:
-  street: MCS B25B, 111 Cummington Mall
-  city: Boston
-  region: MA
-  postcode: '02215'
+email: manushivid@gmail.com
 
 # Site header
 
