@@ -6,11 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 
 /*-- Variables --*/
-$primary:   #2563a8;
+$primary:   #1a3a5c;
+$accent:    #2c6fad;
 $text:      #1a1a2e;
 $muted:     #6b7280;
-$border:    #e5e7eb;
-$bg-light:  #f8fafc;
+$border:    #d0dce8;
+$bg-light:  #f0f5fa;
 
 /*-- Base --*/
 body {
@@ -24,23 +25,24 @@ body {
 h1, h2, h3 {
   font-family: 'Lora', serif;
   font-weight: 600;
-  color: $text;
+  color: $primary;
 }
 
 a {
-  color: $primary;
+  color: $accent;
   text-decoration: none;
-  &:hover { text-decoration: underline; }
+  &:hover { color: $primary; text-decoration: underline; }
 }
 
 /*-- Navbar --*/
 .navbar {
-  border-bottom: 1px solid $border;
-  background: #ffffff !important;
+  border-bottom: none;
+  background: $primary !important;
   padding: 1rem 2rem;
-  .navbar-brand { font-weight: 600; font-size: 1.1rem; color: $text !important; }
-  .nav-link { color: $muted !important; font-size: 0.95rem; font-weight: 500;
-    &:hover { color: $primary !important; } }
+  .navbar-brand { font-weight: 600; font-size: 1.1rem; color: #ffffff !important; }
+  .nav-link { color: rgba(255,255,255,0.85) !important; font-size: 0.95rem; font-weight: 500;
+    &:hover { color: #ffffff !important; } }
+  .bi { color: rgba(255,255,255,0.85) !important; }
 }
 
 /*-- Profile section --*/
@@ -168,11 +170,11 @@ h2.anchored {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: $muted;
+  color: $primary;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   margin: 2.5rem 0 1rem;
-  border-bottom: 2px solid $border;
+  border-bottom: 2px solid $accent;
   padding-bottom: 0.4rem;
 }
 
