@@ -4,7 +4,7 @@ education:
   courses:
   - course: PhD in Statistics
     institution: Boston University
-    year: 2024
+    year: 2026
   - course: MS in Statistics
     institution: University of Rhode Island
     year: 2019
@@ -49,6 +49,6 @@ title: Manushi Welandawe
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
 -->
 
-I am a statistician and data scientist with a PhD in Statistics from Boston University. My research focuses on developing novel methods for scalable and robust Bayesian posterior inference, with a particular emphasis on black-box variational inference.
+I'm a statistician and data scientist with a PhD in Statistics from Boston University. I develop robust, scalable methods for Bayesian and machine learning models, and the diagnostics that tell practitioners when those models are stable and reliable enough to act on.
 
 

@@ -8,7 +8,7 @@ authors:
 - Jonathan H. Huggins
 date: "2024-01-01T00:00:00Z"
 doi: ""
-featured: true
+featured: false
 image:   
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
   focal_point: ""
@@ -18,7 +18,7 @@ links:
 - name: Preprint
   url: https://arxiv.org/abs/2203.15945
 projects: ""
-publication: '*Journal of Machine Learning Research* 25(219): 1–71'
+publication: '*Journal of Machine Learning Research*, 25(219), 1-71'
 publication_short: "JMLR"
 publication_types:
 - "2"
